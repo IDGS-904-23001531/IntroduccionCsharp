@@ -16,7 +16,8 @@ namespace IntroduccionC_
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Prueba", action = "Suma", id = UrlParameter.Optional }
+                defaults: new { controller = "Multiplicacion", action = "Calcular", id = UrlParameter.Optional }
+                //defaults: new { controller = "Distancia", action = "Calcular", id = UrlParameter.Optional }
             );
         }
     }
