@@ -1,0 +1,35 @@
+﻿@model IntroduccionC_.Models.Distancia
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/Distancia/Calcular" method="post">
+
+                <label for="x1">Valor x1:</label>
+                <input type="text" name="x1" value="" />
+                <br />
+
+                <label for="y1">Valor y1:</label>
+                <input type="text" name="y1" value="" />
+                <br />
+
+                <label for="x2">Valor x2:</label>
+                <input type="text" name="x2" value="" />
+                <br />
+
+                <label for="y2">Valor y2:</label>
+                <input type="text" name="y2" value="" />
+                <br />
+
+                <input type="submit" value="Calcular" />
+
+            </form>
+        </div>
+
+        <div class="col-lg-6">
+            <br />
+            <h1>La distancia es: @Html.DisplayFor(model => model.res)</h1>
+        </div>
+
+    </div>
+</div>
